@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+  --body: #0e192d;
+  --table: #16223a;
+  --primary: #1e64f0;
+  --hover: #0d3890;
+  --border: #485979;
+  --light: #fff;
+  --th: #ffffffe7;
+  --td: #ffffff7e;
+  --border-bottom: rgb(255 255 255 / 4%);
+}
+
+
+body{
+  font-family: Raleway, Times, serif !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--body);
+}
+
+/* styles.css */
+table {
+  width: 80%;
+  background: var(--table);
+  color: var(--light);
+  border: solid 2px var(--border);
+  border-radius: 10px;
+  text-align: left;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+th {
+  user-select: none;
+  font-weight: 600;
+  color: var(--th);
+}
+
+th,
+td {
+  position: relative;
+  padding: 15px 20px 15px 20px;
+  border-bottom: 1px solid var(--border-bottom);
+}
+
+td{
+  color: var(--td);
+  font-weight: 400;
+}
+
+.drag {
+  opacity: 0.4;
+  cursor: grab;
+}
+
+.drop {
+  transition: none;
+}
+
+th.over:not(.drop) {
+  border-bottom-color: var(--primary);
+  transition: 0.35;
+}
+
+
+tfoot th{
+  padding: 20px 20px 20px 20px;
+}
+
+tfoot th button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: var(--light);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Raleway, Times, serif !important;
+  border-radius: 10px;
+  transition: all ease .3s;
+}
+tfoot th button i{
+  margin-right: 5px;
+}
+tfoot th button:hover{
+  background: var(--hover);
+}
