@@ -16,7 +16,19 @@ Each tutorial has its own folder, containing:
 
 You can explore individual folders for specific tutorials, and feel free to clone or fork any project to follow along.
 
-## Getting Started
+## Installation and Setup
+
+1. **Install dependencies**  
+   Make sure you have Node.js installed. Then, install the required npm packages by running:
+   ```bash
+   npm install
+
+2. **Run the project**  
+   Use the following command to start the project:
+   ```bash
+   npm run dev
+
+## Clone the repository
 
 1. Clone this repository to your local machine:
    ```bash
