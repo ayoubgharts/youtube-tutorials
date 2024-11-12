@@ -1,0 +1,139 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --light: #fff;
+  --lighter: #ffffff45;
+  --box-border: #e0f9ff85;
+  --input-color: #171d29;
+  --i-color: #333c4f;
+  --primary: #0388fc;
+  --primary-hover: #1e507c;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('./public/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container{
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  width: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: solid 3px var(--box-border);
+}
+.form-container form{
+  width: 80%;
+}
+.form-container form h2{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.form-container form .username,
+.form-container form .password{
+  position: relative;
+}
+.form-container form .username input,
+.form-container form .password input{
+  outline: none;
+  border: none;
+  margin-bottom: 15px;
+  padding: 8px 20px 8px 35px;
+  border-radius: 10px;
+  color: var(--input-color);
+  background: var(--lighter);
+  font-weight: 500;
+  width: 100%;
+  position: relative;
+}
+
+.form-container form .username input::placeholder,
+.form-container form .password input::placeholder{
+  color: var(--input-color);
+  font-style: italic;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.form-container form .username i,
+.form-container form .password i{
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  font-size: 14px;
+  z-index: 999;
+  color: var(--i-color);
+}
+
+
+.form-container form .actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--input-color);
+}
+.form-container form .actions a{
+  text-decoration: none;
+  color: var(--input-color);
+  transition: all ease .3s;
+}
+.form-container form .actions a:hover{
+  color: var(--primary);
+}
+
+
+.form-container form .login-btn button{
+  outline: none;
+  border: none;
+  color: var(--light);
+  background: var(--primary);
+  padding: 8px 20px;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 600;
+  transition: all ease .3s;
+  margin-bottom: 20px;
+}
+
+.form-container form .login-btn button:hover{
+  background: var(--primary-hover);
+}
+
+
+.form-container form p{
+  font-size: 16px;
+  text-transform: lowercase;
+  color: var(--input-color);
+  opacity: 0.9;
+}
+.form-container form p a{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  opacity: 1;
+  color: var(--primary);
+  transition: all ease .3s;
+}
+.form-container form p a:hover{
+  color: var(--primary-hover);
+}
